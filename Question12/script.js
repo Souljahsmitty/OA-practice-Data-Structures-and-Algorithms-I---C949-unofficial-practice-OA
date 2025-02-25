@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             saveAnswer(); // ✅ Save answer before feedback
 
-            if (selectedAnswer.value === "D") {
+            if (selectedAnswer.value === "B") {
                 feedback.textContent = "✔ Correct! Memory sweeping is part of garbage collection that reclaims memory no longer in use by identifying objects no longer accessible.";
                 feedback.className = "correct";
             } else {
