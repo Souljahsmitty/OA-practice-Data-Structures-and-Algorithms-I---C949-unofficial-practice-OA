@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
 				return;
 			}
 
-			if (selectedAnswer.value.trim() === "A") {
+			if (selectedAnswer.value() === "A") {
 				feedback.textContent = "✔ Correct! Heaps provide efficient O(log n) insertions and deletions, making them ideal for priority queues.";
 				feedback.className = "correct";
 			} else {
