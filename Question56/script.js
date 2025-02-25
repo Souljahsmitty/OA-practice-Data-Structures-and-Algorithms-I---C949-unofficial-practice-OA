@@ -58,10 +58,10 @@ document.addEventListener("DOMContentLoaded", function() {
 			}
 
 			if (selectedAnswer.value === "B") {
-				feedback.textContent = "✔ Correct! Stacks follow Last-In-First-Out (LIFO), making them ideal for tracking actions that need to be undone/redone.";
+				feedback.textContent = "✔ Correct! Bubble Sort repeatedly swaps adjacent elements, making it inefficient with O(n²) worst-case complexity.";
 				feedback.className = "correct";
 			} else {
-				feedback.textContent = "✘ Incorrect. The correct answer is B: Stacks follow Last-In-First-Out (LIFO), making them ideal for tracking actions that need to be undone/redone.";
+				feedback.textContent = "✘ Incorrect. The correct answer is B: Bubble Sort repeatedly swaps adjacent elements, making it inefficient with O(n²) worst-case complexity.";
 				feedback.className = "wrong";
 			}
         });
@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (backButton) {
         backButton.addEventListener("click", function() {
             saveAnswer(); // ✅ Save before going back
-            window.location.href = "../Question51/index.html";
+            window.location.href = "../Question55/index.html";
         });
     } else {
         console.error("backQuestion button not found!");
@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (nextButton) {
         nextButton.addEventListener("click", function() {
             saveAnswer(); // ✅ Save before going forward
-            window.location.href = "../Question53/index.html";
+            window.location.href = "../Question57/index.html";
         });
     } else {
         console.error("nextQuestion button not found!");

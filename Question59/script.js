@@ -57,11 +57,11 @@ document.addEventListener("DOMContentLoaded", function() {
 				return;
 			}
 
-			if (selectedAnswer.value === "B") {
-				feedback.textContent = "✔ Correct! Stacks follow Last-In-First-Out (LIFO), making them ideal for tracking actions that need to be undone/redone.";
+			if (selectedAnswer.value === "A") {
+				feedback.textContent = "✔ Correct! Hash tables provide O(1) average-case lookup time, making them efficient for caching.";
 				feedback.className = "correct";
 			} else {
-				feedback.textContent = "✘ Incorrect. The correct answer is B: Stacks follow Last-In-First-Out (LIFO), making them ideal for tracking actions that need to be undone/redone.";
+				feedback.textContent = "✘ Incorrect. The correct answer is A: Hash tables provide O(1) average-case lookup time, making them efficient for caching.";
 				feedback.className = "wrong";
 			}
         });
@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (backButton) {
         backButton.addEventListener("click", function() {
             saveAnswer(); // ✅ Save before going back
-            window.location.href = "../Question51/index.html";
+            window.location.href = "../Question58/index.html";
         });
     } else {
         console.error("backQuestion button not found!");
@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (nextButton) {
         nextButton.addEventListener("click", function() {
             saveAnswer(); // ✅ Save before going forward
-            window.location.href = "../Question53/index.html";
+            window.location.href = "../Question60/index.html";
         });
     } else {
         console.error("nextQuestion button not found!");

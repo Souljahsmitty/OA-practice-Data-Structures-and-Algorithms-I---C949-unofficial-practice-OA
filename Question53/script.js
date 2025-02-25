@@ -57,11 +57,11 @@ document.addEventListener("DOMContentLoaded", function() {
 				return;
 			}
 
-			if (selectedAnswer.value === "B") {
-				feedback.textContent = "✔ Correct! Stacks follow Last-In-First-Out (LIFO), making them ideal for tracking actions that need to be undone/redone.";
-				feedback.className = "correct";
+			if (selectedAnswer.value === "A") {
+            feedback.textContent = "✔ Correct! Binary search has a time complexity of O(log n), whereas linear search takes O(n). However, binary search requires the data to be sorted.";
+            feedback.className = "correct";
 			} else {
-				feedback.textContent = "✘ Incorrect. The correct answer is B: Stacks follow Last-In-First-Out (LIFO), making them ideal for tracking actions that need to be undone/redone.";
+				feedback.textContent = "✘ Incorrect. The correct answer is A: Binary search has a time complexity of O(log n), whereas linear search takes O(n). However, binary search requires the data to be sorted.";
 				feedback.className = "wrong";
 			}
         });
@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (backButton) {
         backButton.addEventListener("click", function() {
             saveAnswer(); // ✅ Save before going back
-            window.location.href = "../Question51/index.html";
+            window.location.href = "../Question52/index.html";
         });
     } else {
         console.error("backQuestion button not found!");
@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (nextButton) {
         nextButton.addEventListener("click", function() {
             saveAnswer(); // ✅ Save before going forward
-            window.location.href = "../Question53/index.html";
+            window.location.href = "../Question54/index.html";
         });
     } else {
         console.error("nextQuestion button not found!");

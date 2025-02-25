@@ -58,10 +58,10 @@ document.addEventListener("DOMContentLoaded", function() {
 			}
 
 			if (selectedAnswer.value === "A") {
-				feedback.textContent = "✔ Correct! In Python, an Array is an ADT that represents a collection of elements stored in contiguous memory locations.";
+				feedback.textContent = "✔ Correct! To insert at the beginning of an array, all elements must be shifted one position, resulting in O(n) time complexity.";
 				feedback.className = "correct";
 			} else {
-				feedback.textContent = "✘ Incorrect. The correct answer is A: An Array is an ADT used in Python for storing elements in a structured format.";
+				feedback.textContent = "✘ Incorrect. The correct answer is A: To insert at the beginning of an array, all elements must be shifted one position, resulting in O(n) time complexity.";
 				feedback.className = "wrong";
 			}
         });
