@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 return;
             }
 
-            if (selectedAnswer.value === "B") {
+            if (selectedAnswer.value === "A") {
                 feedback.textContent = "✔ Correct! Trees naturally represent hierarchical relationships, such as file systems or XML data.";
                 feedback.className = "correct";
             } else {
