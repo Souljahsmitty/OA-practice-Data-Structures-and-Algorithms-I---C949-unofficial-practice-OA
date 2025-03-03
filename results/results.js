@@ -13,304 +13,304 @@ document.addEventListener("DOMContentLoaded", function () {
     // Questions and correct answers
     const quizData = {
         "1": { 
-        question: "1. Which term refers to a template for creating an object?", 
-        correct: "B", 
-        explanation: "A class is a blueprint for creating objects in object-oriented programming." 
+        question: "1. Which data structure allows inserting and deleting elements at both the front and the rear?", 
+        correct: "C", 
+        explanation: "A deque (double-ended queue) allows insertion and deletion at both ends." 
     },
 		"2": { 
-        question: "2. Which characteristic of an algorithm is independent in nature?", 
-        correct: "D", 
-        explanation: "An algorithm is independent if it does not depend on specific platforms or tools, making an agnostic code repository a valid answer." 
+        question: "2. What is the time complexity of searching for an element in a balanced binary search tree (BST)?", 
+        correct: "B", 
+        explanation: "In a balanced BST, each comparison allows the operations to skip about half of the tree, leading to logarithmic time complexity." 
     },
     "3": { 
-        question: "3. What is referred to as a data structure that stores subitems?", 
+        question: "3. In a hash table, what is the purpose of a hash function?", 
         correct: "B", 
-        explanation: "A record is a data structure that stores subitems, each with an associated name." 
+        explanation: "A hash function computes an index into an array of buckets or slots, from which the desired value can be found." 
     },
     "4": { 
-        question: "4. Which factor takes the ability to easily update an algorithm into consideration?", 
-        correct: "A", 
-        explanation: "Maintainability ensures an algorithm is easy to modify, update, or enhance without significant rework." 
+        question: "4. Which sorting algorithm has the best average-case time complexity?", 
+        correct: "C", 
+        explanation: "Merge Sort has an average-case time complexity of O(n log n), which is more efficient than the quadratic time complexities of Bubble Sort, Insertion Sort, and Selection Sort." 
     },
     "5": { 
-        question: "5. What is a component of an algorithm that specifies a stopping point?", 
-        correct: "D", 
-        explanation: "Finiteness ensures an algorithm has a defined stopping point and does not run indefinitely." 
+        question: "5. What is the primary characteristic of a stack data structure?", 
+        correct: "B", 
+        explanation: "A stack is a collection of elements that follows the LIFO principle, where the last element added is the first one to be removed." 
     },
     "6": { 
-        question: "6. Which term refers to a type of search algorithm?", 
-        correct: "A", 
-        explanation: "Linear search is a basic search algorithm that checks elements sequentially." 
+        question: "6. In Big O notation, what does O(n^2) represent?", 
+        correct: "C", 
+        explanation: "The correct answer is C: O(n^2) denotes an algorithm whose performance is directly proportional to the square of the size of the input data set." 
     },
     "7": { 
-        question: "7. What is a high-level consideration in an algorithm's design?", 
-        correct: "A", 
-        explanation: "Simplicity ensures that an algorithm is easy to understand, maintain, and implement." 
+        question: "7. Which data structure is most efficient for implementing a priority queue?", 
+        correct: "C", 
+        explanation: "A heap is a specialized tree-based data structure that satisfies the heap property, making it efficient for implementing priority queues." 
     },
     "8": { 
-        question: "8. What is a high-level consideration in an algorithm's design?", 
-        correct: "B", 
-        explanation: "A priori analysis evaluates an algorithm's efficiency before execution, without empirical testing." 
+        question: "8. What is the result of adding an element to the end of an array that is already full?", 
+        correct: "C", 
+        explanation: "In static arrays with fixed size, attempting to add an element beyond its capacity results in an overflow error." 
     },
     "9": { 
-        question: "9. Which review of an algorithm happens after implementation?", 
-        correct: "A", 
-        explanation: "A posteriori analysis evaluates an algorithm's performance based on actual execution results." 
+        question: "9. In a linked list, what does each node typically contain?", 
+        correct: "B", 
+        explanation: "In a singly linked list, each node contains data and a reference (or pointer) to the next node in the sequence." 
     },
     "10": { 
-        question: "10. Which review of an algorithm happens after implementation?", 
-        correct: "C", 
-        explanation: "A posteriori analysis measures an algorithm's performance after it has been executed." 
+        question: "10. Which tree traversal method visits the root node first, then the left subtree, and finally the right subtree?", 
+        correct: "B", 
+        explanation: "Pre-order traversal processes the root node before its child nodes, following the order: root, left subtree, right subtree." 
     },
 	 "11": { 
-        question: "11. Which factor helps measure the reusability of an algorithm?", 
+        question: "11. What is the main advantage of using a linked list over an array?", 
         correct: "B", 
-        explanation: "Extensibility determines how easily an algorithm can be modified and reused." 
+        explanation: "Linked lists do not have a fixed size, meaning they can dynamically grow or shrink as elements are added or removed." 
     },
     "12": { 
-        question: "12. Which algorithm requires data sorting as a first step?", 
-        correct: "C", 
-        explanation: "Binary search requires the dataset to be sorted before performing the search operation." 
+        question: "12. In garbage collection, what is the process of identifying and reclaiming memory that is no longer in use?", 
+        correct: "B", 
+        explanation: "Memory sweeping is part of garbage collection that reclaims memory no longer in use by identifying objects no longer accessible." 
     },
     "13": { 
-        question: "13. What does a time complexity analysis of an algorithm include?", 
-        correct: "D", 
-        explanation: "Worst-case analysis measures the maximum number of operations an algorithm performs." 
+        question: "13. Which data structure uses the First-In-First-Out (FIFO) principle?", 
+        correct: "B", 
+        explanation: "A queue follows the FIFO principle, meaning elements are inserted at one end (rear) and removed from the other end (front)." 
     },
     "14": { 
-        question: "14. Which data type do heap sorts work with?", 
+        question: "14. What is the time complexity of inserting an element at the beginning of a singly linked list?", 
         correct: "A", 
-        explanation: "Heap sort works with a tree-based data structure that follows the heap property." 
+        explanation: "Since a singly linked list has a reference to the head node, inserting a new node at the beginning only requires changing one pointer." 
     },
     "15": { 
-        question: "15. Which function is used in conjunction with a merge sort algorithm?", 
-        correct: "D", 
-        explanation: "Merge Sort uses recursion to divide and conquer subarrays before merging them." 
+        question: "15. In a binary search algorithm, what must be true about the array being searched?", 
+        correct: "B", 
+        explanation: "Binary search divides the array into halves, so it only works efficiently when the array is sorted." 
     },
     "16": { 
-        question: "16. Which attribute of a recursive function makes it unique?", 
+        question: "16. What is the purpose of a sentinel node in a linked list?", 
         correct: "A", 
-        explanation: "A recursive function is unique because it calls itself within its definition." 
+        explanation: "A sentinel node is used to avoid special cases when inserting or deleting nodes at the head or tail." 
     },
     "17": { 
-        question: "17. What is x in the following block of logic?\n x = 28 \n If x >= 10 and x < 20\n x = 20 \n elif x <= 30 \n x = 25 \n elif x >= 50\n x = 100 \n else x = 500", 
+        question: "17. Which sorting algorithm is the most efficient for a nearly sorted", 
         correct: "B", 
-        explanation: "Since x=28 falls within the elif x <= 30 condition, x is assigned the value 25." 
+        explanation: "Insertion Sort is highly efficient for nearly sorted arrays with a best-case time complexity of O(n)." 
     },
     "18": { 
-        question: "18. What is an if statement inside of an if statement referred to as?", 
+        question: "18. Which data structure is most efficient for implementing an undo feature in an application?", 
         correct: "A", 
-        explanation: "An if statement inside another if statement is called a nested if statement." 
+        explanation: "A stack follows the Last-In-First-Out (LIFO) principle, making it ideal for tracking the most recent operations for undo functionality." 
     },
     "19": { 
-        question: "19. Which search algorithm functions by continually dividing the dataset in half until the sought item is found or the dataset is exhausted?", 
+        question: "19. What is the worst-case time complexity of QuickSort?", 
         correct: "B", 
-        explanation: "Binary search repeatedly divides the dataset in half, making it efficient for sorted data." 
+        explanation: "The worst-case occurs when the pivot always selects the smallest or largest element, leading to an unbalanced partition." 
     },
     "20": { 
-        question: "20. Which search algorithm has the best performance when the dataset is sorted?", 
-        correct: "C", 
-        explanation: "Interval search methods like binary search perform best when the dataset is sorted." 
+        question: "20. What is the advantage of using a hash table over a binary search tree (BST)?", 
+        correct: "A", 
+        explanation: "Hash tables typically provide O(1) lookup time, while BSTs provide O(log n) lookup time. Faster lookups on average." 
     },
 	"21": { 
-        question: "21. Which term describes a way of organizing, storing, and performing operations on data?", 
+        question: "21. What is the primary disadvantage of using an array over a linked list?", 
         correct: "A", 
-        explanation: "A data structure organizes and stores data, enabling efficient operations." 
+        explanation: "A **data structure** is a way of organizing, storing, and managing data efficiently." 
     },
     "22": { 
-        question: "22. Which data structure is used to implement a dictionary data type?", 
+        question: "22. How does a circular queue differ from a standard queue?", 
         correct: "B", 
-        explanation: "A hash table is used to implement dictionaries, providing efficient key-value lookups." 
+        explanation: "A circular queue efficiently reuses empty spaces left by removed elements, unlike a standard queue." 
     },
     "23": { 
-        question: "23. Which element refers to the numeric positions in a list abstract data type (ADT)?", 
-        correct: "D", 
-        explanation: "Indexes refer to the numeric positions of elements in a list ADT." 
+        question: "23. What is the key characteristic of a doubly linked list that distinguishes it from a singly linked list?", 
+        correct: "B", 
+        explanation: "Doubly linked lists store references to both the next and previous nodes, allowing for bidirectional traversal." 
     },
     "24": { 
-        question: "24. Which characteristic of a class allows it to be used as an abstract data type (ADT)?", 
-        correct: "C", 
-        explanation: "A class is an ADT because it consists of variables and methods that define behavior." 
+        question: "24. What is the main advantage of garbage collection in memory management?", 
+        correct: "A", 
+        explanation: "Garbage collection automatically frees up memory occupied by objects that are no longer in use, reducing manual memory management errors." 
     },
     "25": { 
-        question: "25. What is the result when 6 is enqueued to the queue 7,9,8 (with 7 as the front)?", 
-        correct: "B", 
-        explanation: "Enqueuing 6 adds it to the back of the queue, making the order 7,9,8,6." 
+        question: "25. In tree traversal, which algorithm visits all nodes at the current level before moving to the next level?", 
+        correct: "A", 
+        explanation: "BFS explores all nodes at the present depth level before traversing nodes at the next level, making it useful for shortest path problems." 
     },
     "26": { 
-        question: "26. Which value would be returned from executing the dequeue operation on the queue 7,9,8 (with 7 as the front)?", 
-        correct: "B", 
-        explanation: "Dequeue removes the front element (7), leaving 9,8." 
+        question: "26. What is the primary difference between a singly linked list and a doubly linked list?", 
+        correct: "C", 
+        explanation: "A singly linked list stores a reference to the next node only, whereas a doubly linked list stores references to both the next and previous nodes, allowing for traversal in both directions." 
     },
     "27": { 
-        question: "27. Which queue results from executing the following queue operations on the queue 7,9,8 (with 7 as the front)? Dequeue() Enqueue(6) Enqueue(5) Dequeue()", 
-        correct: "C", 
-        explanation: "After operations, 8 remains at the front, followed by 6 and 5." 
+        question: "27. Which of the following operations is performed in O(1) time in a stack?", 
+        correct: "B", 
+        explanation: "Push and pop operations in a stack occur in O(1) time, as they only involve adding or removing the topmost element." 
     },
     "28": { 
-        question: "28. What will be the new state of the queue 7,9,8 (with 7 as the front) after the enqueue (3) operation?", 
+        question: "28. Which searching algorithm works best for sorted arrays?", 
         correct: "A", 
-        explanation: "Enqueuing 3 adds it to the back, making the order 7,9,8,3." 
+        explanation: "Binary search is optimal for sorted arrays, reducing search time complexity to O(log n)." 
     },
     "29": { 
-        question: "29. Which format is used to store data in a hash table?", 
+        question: "29. Which sorting algorithm repeatedly selects the smallest element and swaps it with the current index?", 
         correct: "B", 
-        explanation: "A hash table stores data in an array using key-value pairs for efficient lookup." 
+        explanation: "Selection Sort finds the smallest element in each iteration and swaps it with the current position." 
     },
     "30": { 
-        question: "30. Which term refers to a data structure that groups related items of data together?", 
-        correct: "C", 
-        explanation: "A record groups related items together as a structured data type." 
+        question: "30. What is the space complexity of an in-place sorting algorithm?", 
+        correct: "D", 
+        explanation: "In-place sorting algorithms sort the array without using additional memory, resulting in O(1) space complexity." 
     },
     "31": { 
-        question: "31. Which data structure is used to store unordered items by mapping each item to a location in an array?", 
-        correct: "D", 
-        explanation: "A hash table maps each item to a location in an array using a hash function." 
+        question: "31. Which data structure is used for implementing recursion?", 
+        correct: "B", 
+        explanation: "Recursion uses the call stack to store function calls, making stacks the ideal data structure." 
     },
     "32": { 
-        question: "32. What is the advantage that a linked list has over an array?", 
+        question: "32. What is the advantage of using a heap over an array in a priority queue?", 
         correct: "A", 
-        explanation: "A linked list grows and shrinks dynamically, while an array has a fixed size." 
+        explanation: "Heaps provide efficient O(log n) insertions and deletions, making them ideal for priority queues." 
     },
     "33": { 
-        question: "33. What would be the best data structure for a hash table with simple chaining?", 
+        question: "33. What is the time complexity of inserting an element in an unsorted linked list?", 
         correct: "B", 
-        explanation: "A linked list is used in hash tables to handle collisions using chaining." 
+        explanation: "Insertion in an unsorted linked list takes O(1) time, as the new node can be added at the head." 
     },
     "34": { 
-        question: "34. How many objects are shown in the image?", 
+        question: "34. Which data structure efficiently supports LRU (Least Recently Used) cache?", 
         correct: "B", 
-        explanation: "The image contains three distinct objects, based on the provided visual." 
+        explanation: "An LRU cache efficiently maintains recently used elements using a hash table for fast lookups and a doubly linked list for tracking order." 
     },
     "35": { 
-        question: "35. What is the root node for this tree?", 
-        correct: "A", 
-        explanation: "The root node is the topmost node in a tree structure, which is Anne (1)." 
+        question: "35. Which tree traversal method is used in depth-first search?", 
+        correct: "B", 
+        explanation: "Depth-first search (DFS) uses in-order, pre-order, or post-order traversal methods." 
     },
     "36": { 
-        question: "36. What is the height of this tree?", 
-        correct: "C", 
-        explanation: "The height of a tree is the longest path from the root node to a leaf, which is three." 
+        question: "36. Which of the following data structures is most suitable for implementing a dictionary?", 
+        correct: "B", 
+        explanation: "A hash table stores key-value pairs and allows O(1) average-time lookups." 
     },
     "37": { 
-        question: "37. Which data structure is the most dynamic in storing data items of varying lengths?", 
+        question: "37. What happens when two different keys map to the same index in a hash table?", 
         correct: "B", 
-        explanation: "A list in Python allows dynamic resizing and can store elements of varying sizes." 
+        explanation: "Collisions in hash tables occur when multiple keys hash to the same index, requiring resolution techniques such as chaining or open addressing." 
     },
     "38": { 
-        question: "38. What is the resulting stack when the push(1) function is implemented on this stack yield? 8,9,3,5 (top is 8)", 
+        question: "38. Which of the following data structures is best for fast lookup operations?", 
         correct: "A", 
-        explanation: "Pushing 1 onto the stack places it on top, resulting in 8,9,3,5,1." 
+        explanation: "Hash tables provide average-case O(1) lookup time, making them efficient for searching." 
     },
     "39": { 
-        question: "39. What will the peek() operation from this stack return? 8,9,3,5 (top is 8)", 
-        correct: "C", 
-        explanation: "Peek() returns the top element without removing it, which is 8." 
+        question: "39. Which data structure is commonly used for implementing graphs?", 
+        correct: "A", 
+        explanation: "Graphs are represented using adjacency lists (space-efficient) or adjacency matrices (faster lookups)." 
     },
     "40": { 
-        question: "40. What is the set that results from set1 intersection set2, given these sets? set1 = (69,82,47) set2 = (11,82)", 
+        question: "40. Which algorithm is used to find the shortest path in a weighted graph?", 
         correct: "A", 
-        explanation: "The intersection of two sets includes only common elements, which is (82)." 
+        explanation: "Dijkstra’s algorithm efficiently finds the shortest path in graphs with positive edge weights." 
     },
 	"41": { 
-        question: "41. What is the time complexity of appending an item to an array when resizing is required?", 
+        question: "41. Which of the following is NOT an abstract data type (ADT)?", 
         correct: "B", 
-        explanation: "Resizing an array requires copying all elements to a new array, making it O(n)." 
+        explanation: "Arrays are a concrete data structure, while ADTs describe behavior rather than implementation." 
     },
     "42": { 
-        question: "42. What is an Abstract Data Type (ADT)?", 
-        correct: "B", 
-        explanation: "An ADT describes operations without specifying how they are implemented." 
+        question: "42. Which data structure is used for implementing function calls?", 
+        correct: "A", 
+        explanation: "Function calls use a stack (call stack) to store return addresses and local variables." 
     },
     "43": { 
-        question: "43. What is the output of the following operations on an empty list? Append(list, 11) Append(list, 4) Append(list, 7) Print(list)", 
-        correct: "C", 
-        explanation: "Appending items in sequence results in [11, 4, 7]." 
+        question: "43. What is the time complexity of deleting a node from a doubly linked list?", 
+        correct: "A", 
+        explanation: "If a pointer to the node is available, deletion in a doubly linked list is O(1).." 
     },
     "44": { 
-        question: "44. What is the order of these functions by growth rate? 2/N, 37, 2N, N log(N2), N2?", 
-        correct: "A", 
-        explanation: "Sorting functions by growth rate follows the standard complexity order." 
+        question: "44. Which of the following sorting algorithms is NOT based on comparisons?", 
+        correct: "C", 
+        explanation: "Radix Sort sorts numbers digit by digit and does not rely on comparisons." 
     },
     "45": { 
-        question: "45. What is the first element visited in this list when binary searching for the number 7? [6,7,8,9,11,15,20]?", 
-        correct: "A", 
-        explanation: "Binary search starts at the middle element, which is 9." 
+        question: "45. Which data structure is best for a breadth-first search traversal?", 
+        correct: "B", 
+        explanation: "BFS uses a queue to explore nodes level by level." 
     },
     "46": { 
-        question: "46. How many elements in a list of size 64 would be visited when using a binary search for a number that is larger than all the values in the list?", 
+        question: "46. What is the time complexity of accessing an element in an array using an index?", 
         correct: "B", 
-        explanation: "Binary search repeatedly halves the list, so it visits log2(64) = 6 elements." 
+        explanation: "Array indexing provides direct access to elements in O(1) time." 
     },
     "47": { 
-        question: "47. What is the runtime complexity of the algorithm O(N^N + 1)?", 
-        correct: "D", 
-        explanation: "The dominant term O(N^N) determines the complexity, which is exponential." 
+        question: "47. In a max heap, what is the largest element?", 
+        correct: "B", 
+        explanation: "In a max heap, the root node contains the largest element." 
     },
     "48": { 
-        question: "48. How many elements in a list of size 64 would be visited when using a binary search for a number that is smaller than all the values in the list?", 
-        correct: "D", 
-        explanation: "Binary search halves the list log2(64) = 6 times, visiting 6 elements." 
+        question: "48. Which of the following statements is true for a queue?", 
+        correct: "B", 
+        explanation: "Queues follow FIFO, where elements are inserted at the rear and removed from the front." 
     },
     "49": { 
-        question: "49. What is the runtime complexity for the expression 305 + O(325N)?", 
-        correct: "D", 
-        explanation: "The constant term 305 is ignored, making the complexity O(N)." 
+        question: "49. What is the purpose of dynamic memory allocation?", 
+        correct: "A", 
+        explanation: "Dynamic memory allocation allows programs to request memory during execution rather than at compile time." 
     },
     "50": { 
-        question: "50. What is the runtime complexity for this code? for x in range(N): for y in range(N): for z in range(N): tot = tot + z print tot?", 
-        correct: "D", 
-        explanation: "Three nested loops result in O(N^3) complexity." 
+        question: "50. Which data structure is best for representing a hierarchical structure?", 
+        correct: "A", 
+        explanation: "Trees naturally represent hierarchical relationships, such as file systems or XML data." 
     },
 	"51": { 
-        question: "51. Which term describes an abstract data type (ADT) that Python uses?", 
+        question: "51. What is the time complexity of inserting an element at the beginning of an array?", 
         correct: "A", 
-        explanation: "An array is an ADT used in Python to store ordered elements in contiguous memory locations." 
+        explanation: "To insert at the beginning of an array, all elements must be shifted one position, resulting in O(n) time complexity." 
     },
     "52": { 
-        question: "52. Which abstract data type (ADT) is characterized by the LIFO (Last In, First Out) principle?", 
+        question: "52. Which data structure is most efficient for implementing an Undo/Redo feature in an application?", 
         correct: "B", 
-        explanation: "A stack follows the LIFO principle, meaning the most recently added item is removed first." 
+        explanation: "Stacks follow Last-In-First-Out (LIFO), making them ideal for tracking actions that need to be undone/redone." 
     },
     "53": { 
-        question: "53. Which queue operation removes an item from the front of the queue?", 
+        question: "53. What is the main advantage of using a binary search over linear search?", 
         correct: "A", 
-        explanation: "'dequeue()' removes an item from the front of the queue following FIFO (First In, First Out) order." 
+        explanation: "Binary search has a time complexity of O(log n), whereas linear search takes O(n). However, binary search requires the data to be sorted." 
     },
     "54": { 
-        question: "54. Which function in Python returns the number of times the desired value is found in a tuple?", 
-        correct: "C", 
-        explanation: "The 'count()' function returns the number of occurrences of a specific value in a tuple." 
+        question: "54. Which of the following is a self-balancing binary search tree?", 
+        correct: "B", 
+        explanation: "AVL trees automatically balance themselves after insertions or deletions, maintaining O(log n) operations." 
     },
     "55": { 
-        question: "55. Which function in Python is used to find a specific value in a tuple?", 
-        correct: "A", 
-        explanation: "The 'index()' function finds the first occurrence of a specific value in a tuple." 
+        question: "55. What is the purpose of a sentinel node in a linked list?", 
+        correct: "C", 
+        explanation: "Sentinel nodes help simplify insertions and deletions at the head or tail, reducing edge cases in code." 
     },
     "56": { 
-        question: "56. Which Python list function will remove all items from a list?", 
-        correct: "A", 
-        explanation: "The 'clear()' function removes all elements from a list, making it empty." 
+        question: "56. Which sorting algorithm has the worst-case time complexity of O(n²)?", 
+        correct: "B", 
+        explanation: "Bubble Sort repeatedly swaps adjacent elements, making it inefficient with O(n²) worst-case complexity." 
     },
     "57": { 
-        question: "57. Which abstract data type (ADT) allows operations at one end only?", 
-        correct: "A", 
-        explanation: "A stack allows insertion and removal only from one end (LIFO behavior)." 
+        question: "57. What is the key characteristic of a stable sorting algorithm?", 
+        correct: "B", 
+        explanation: "Stable sorting algorithms keep elements with equal values in their original relative order." 
     },
     "58": { 
-        question: "58. Which Python list function removes the first instance of the specified element?", 
-        correct: "C", 
-        explanation: "The 'remove()' function deletes the first occurrence of a specified element in a list." 
+        question: "58. What is the primary advantage of a doubly linked list over a singly linked list?", 
+        correct: "B", 
+        explanation: "Doubly linked lists maintain pointers to both the next and previous nodes, enabling bidirectional traversal.Reset Back Next" 
     },
     "59": { 
-        question: "59. How does the insertion sort algorithm sort through a list?", 
+        question: "59. Which data structure is best suited for implementing a cache?", 
         correct: "A", 
-        explanation: "Insertion sort iterates through a list, placing each value into its correct sorted position." 
+        explanation: "Hash tables provide O(1) average-case lookup time, making them efficient for caching." 
     },
     "60": { 
-        question: "60. What is the average runtime complexity of the merge sort algorithm?", 
-        correct: "D", 
-        explanation: "Merge Sort has an average time complexity of O(N log N) due to its divide-and-conquer approach." 
+        question: "60. Which type of tree is commonly used in database indexing?", 
+        correct: "B", 
+        explanation: "B-Trees are balanced multi-way search trees, optimized for disk-based storage in databases." 
     },
 		"61": { 
         question: "61. What is the midpoint given the quicksort on this list? Consider the lowindex = 5 and highindex = 9. (43,3,72,18,2,28,51,111,66,71)?", 
