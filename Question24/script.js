@@ -57,11 +57,11 @@ document.addEventListener("DOMContentLoaded", function() {
 				return;
 			}
 
-			if (selectedAnswer.value === "B") {
-				feedback.textContent = "✔ Correct! The pop() function removes the specified key from the dictionary and returns its value.";
+			if (selectedAnswer.value === "A") {
+				feedback.textContent = "✔ Correct! Garbage collection automatically frees up memory occupied by objects that are no longer in use, reducing manual memory management errors.";
 				feedback.className = "correct";
 			} else {
-				feedback.textContent = "✘ Incorrect. The correct answer is B: The pop() function removes the specified key from the dictionary and returns its value.";
+				feedback.textContent = "✘ Incorrect. The correct answer is A: Garbage collection automatically frees up memory occupied by objects that are no longer in use, reducing manual memory management errors.";
 				feedback.className = "wrong";
 			}
         });

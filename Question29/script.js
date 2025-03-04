@@ -57,11 +57,11 @@ document.addEventListener("DOMContentLoaded", function() {
 				return;
 			}
 
-			if (selectedAnswer.value === "D") {
-				feedback.textContent = "✔ Correct! Since the hash function is key % 1009, computing 2023 % 1009 results in 5. Thus, the data is stored in soc[5].";
+			if (selectedAnswer.value === "B") {
+				feedback.textContent = "✔ Correct! Selection Sort finds the smallest element in each iteration and swaps it with the current position.";
 				feedback.className = "correct";
 			} else {
-				feedback.textContent = "✘ Incorrect. The correct answer is **D. Since the hash function is key % 1009, computing 2023 % 1009 results in 5. Thus, the data is stored in soc[5].";
+				feedback.textContent = "✘ Incorrect. The correct answer is **B. Selection Sort finds the smallest element in each iteration and swaps it with the current position.";
 				feedback.className = "wrong";
 			}
         });

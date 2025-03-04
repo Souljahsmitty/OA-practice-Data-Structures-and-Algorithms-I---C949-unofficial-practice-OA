@@ -57,11 +57,11 @@ document.addEventListener("DOMContentLoaded", function() {
 				return;
 			}
 
-			if (selectedAnswer.value === "C") {
-				feedback.textContent = "✔ Correct! In an associative dictionary, keys must be unique and immutable to ensure proper data retrieval.";
+			if (selectedAnswer.value === "B") {
+				feedback.textContent = "✔ Correct! Doubly linked lists store references to both the next and previous nodes, allowing for bidirectional traversal.";
 				feedback.className = "correct";
 			} else {
-				feedback.textContent = "✘ Incorrect. The correct answer is C: In an associative dictionary, keys must be unique and immutable to ensure proper data retrieval.";
+				feedback.textContent = "✘ Incorrect. The correct answer is B: Doubly linked lists store references to both the next and previous nodes, allowing for bidirectional traversal.";
 				feedback.className = "wrong";
 			}
         });

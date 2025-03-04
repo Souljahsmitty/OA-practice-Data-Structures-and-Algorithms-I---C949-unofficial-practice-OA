@@ -57,11 +57,11 @@ document.addEventListener("DOMContentLoaded", function() {
 				return;
 			}
 
-			if (selectedAnswer.value === "A") {
-				feedback.textContent = "✔ Correct! The first mid-value is 90. Since 99 is greater than 90, the search moves to the right half, where the next mid-value is 99.";
+			if (selectedAnswer.value === "B") {
+				feedback.textContent = "✔ Correct! The primary disadvantage of an array over a linked list is that it has a fixed size";
 				feedback.className = "correct";
 			} else {
-				feedback.textContent = "✘ Incorrect. The correct answer is A: The first mid-value is 90. Since 99 is greater than 90, the search moves to the right half, where the next mid-value is 99.";
+				feedback.textContent = "✘ Incorrect. The correct answer is B: The primary disadvantage of an array over a linked list is that it has a fixed size";
 				feedback.className = "wrong";
 			}
         });

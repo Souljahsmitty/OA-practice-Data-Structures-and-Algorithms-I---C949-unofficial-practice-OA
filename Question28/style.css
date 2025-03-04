@@ -32,14 +32,3 @@ button:hover {
     color: red;
     font-weight: bold;
 }
-.image-container {
-            text-align: center; /* Center the image */
-            margin-bottom: 20px; /* Space between the image and the question */
-        }
-img {
-            max-width: 100%; /* Ensure image scales properly */
-            height: auto; /* Maintain aspect ratio */
-            border: 2px solid #000; /* Optional: Add a border */
-            display: block;
-            margin: 0 auto; /* Center horizontally */
-}

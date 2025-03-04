@@ -57,11 +57,11 @@ document.addEventListener("DOMContentLoaded", function() {
 				return;
 			}
 
-			if (selectedAnswer.value === "C") {
-				feedback.textContent = "✔ Correct! A dictionary stores key-value pairs, such as student names (keys) and their test scores (values).";
+			if (selectedAnswer.value === "B") {
+				feedback.textContent = "✔ Correct! A circular queue efficiently reuses empty spaces left by removed elements, unlike a standard queue.";
 				feedback.className = "correct";
 			} else {
-				feedback.textContent = "✘ Incorrect. The correct answer is C: A dictionary stores key-value pairs, such as student names (keys) and their test scores (values).";
+				feedback.textContent = "✘ Incorrect. The correct answer is B: A circular queue efficiently reuses empty spaces left by removed elements, unlike a standard queue.";
 				feedback.className = "wrong";
 			}
         });

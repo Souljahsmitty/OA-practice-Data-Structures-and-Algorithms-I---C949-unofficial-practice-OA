@@ -58,10 +58,10 @@ document.addEventListener("DOMContentLoaded", function() {
 			}
 
 			if (selectedAnswer.value === "A") {
-				feedback.textContent = "✔ Correct! Preorder traversal visits the root first, then recursively visits the left subtree, followed by the right subtree.";
+				feedback.textContent = "✔ Correct! Binary search is optimal for sorted arrays, reducing search time complexity to O(log n).";
 				feedback.className = "correct";
 			} else {
-				feedback.textContent = "✘ Incorrect. The correct answer is A: Preorder traversal visits the root first, then recursively visits the left subtree, followed by the right subtree.";
+				feedback.textContent = "✘ Incorrect. The correct answer is A: Binary search is optimal for sorted arrays, reducing search time complexity to O(log n).";
 				feedback.className = "wrong";
 			}
         });

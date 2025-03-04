@@ -57,11 +57,11 @@ document.addEventListener("DOMContentLoaded", function() {
 				return;
 			}
 
-			if (selectedAnswer.value === "C") {
-				feedback.textContent = "✔ Correct! The stack follows LIFO (Last-In-First-Out), the queue follows FIFO (First-In-First-Out), and the priority queue removes the highest value first.";
+			if (selectedAnswer.value === "D") {
+				feedback.textContent = "✔ Correct! In-place sorting algorithms sort the array without using additional memory, resulting in O(1) space complexity.";
 				feedback.className = "correct";
 			} else {
-				feedback.textContent = "✘ Incorrect. The correct answer is **C. The stack follows LIFO (Last-In-First-Out), the queue follows FIFO (First-In-First-Out), and the priority queue removes the highest value first.";
+				feedback.textContent = "✘ Incorrect. The correct answer is **D. In-place sorting algorithms sort the array without using additional memory, resulting in O(1) space complexity.";
 				feedback.className = "wrong";
 			}
         });
