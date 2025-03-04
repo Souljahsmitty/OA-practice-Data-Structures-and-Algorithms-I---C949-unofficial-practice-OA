@@ -68,7 +68,15 @@ document.addEventListener("DOMContentLoaded", function() {
     } else {
         console.error("submitAnswer button not found!");
     }
-
+	const resetButton = document.getElementById("resetQuiz");
+    if (resetButton) {
+        resetButton.addEventListener("click", function() {
+            localStorage.clear(); // Clears all stored answers and resets timer
+            window.location.href = "../index.html";
+        });
+    } else {
+        console.error("resetQuiz button not found!");
+    }
     const backButton = document.getElementById("backQuestion");
     if (backButton) {
         backButton.addEventListener("click", function() {
