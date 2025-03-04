@@ -58,10 +58,10 @@ document.addEventListener("DOMContentLoaded", function() {
 			}
 
 			if (selectedAnswer.value === "A") {
-				feedback.textContent = "✔ Correct! Hash tables typically provide O(1) lookup time, while BSTs provide O(log n) lookup time. Faster lookups on average.";
+				feedback.textContent = "✔ Correct! When an object reference is set to null, it becomes unreachable and is eligible for garbage collection automatically.";
 				feedback.className = "correct";
 			} else {
-				feedback.textContent = "✘ Incorrect. The correct answer is A. Hash tables typically provide O(1) lookup time, while BSTs provide O(log n) lookup time. Faster lookups on average.";
+				feedback.textContent = "✘ Incorrect. The correct answer is A. When an object reference is set to null, it becomes unreachable and is eligible for garbage collection automatically.";
 				feedback.className = "wrong";
 			}
         });

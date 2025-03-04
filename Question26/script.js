@@ -57,11 +57,11 @@ document.addEventListener("DOMContentLoaded", function() {
 				return;
 			}
 
-			if (selectedAnswer.value === "C") {
-				feedback.textContent = "✔ Correct! A singly linked list stores a reference to the next node only, whereas a doubly linked list stores references to both the next and previous nodes, allowing for traversal in both directions.";
+			if (selectedAnswer.value === "A") {
+				feedback.textContent = "✔ Correct! In a stack, the last item pushed ('bacon') is placed on top, resulting in the order 'bacon''sausage''toast''eggs''ham'.";
 				feedback.className = "correct";
 			} else {
-				feedback.textContent = "✘ Incorrect. The correct answer is C: A singly linked list stores a reference to the next node only, whereas a doubly linked list stores references to both the next and previous nodes, allowing for traversal in both directions.";
+				feedback.textContent = "✘ Incorrect. The correct answer is A: In a stack, the last item pushed ('bacon') is placed on top, resulting in the order 'bacon''sausage''toast''eggs''ham'.";
 				feedback.className = "wrong";
 			}
         });

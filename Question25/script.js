@@ -58,10 +58,10 @@ document.addEventListener("DOMContentLoaded", function() {
 			}
 
 			if (selectedAnswer.value === "A") {
-				feedback.textContent = "✔ Correct! BFS explores all nodes at the present depth level before traversing nodes at the next level, making it useful for shortest path problems.";
+				feedback.textContent = "✔ Correct! The dict.keys() method returns a view object that displays a list of all the dictionary’s keys.";
 				feedback.className = "correct";
 			} else {
-				feedback.textContent = "✘ Incorrect. The correct answer is A: BFS explores all nodes at the present depth level before traversing nodes at the next level, making it useful for shortest path problems.";
+				feedback.textContent = "✘ Incorrect. The correct answer is A: The dict.keys() method returns a view object that displays a list of all the dictionary’s keys.";
 				feedback.className = "wrong";
 			}
         });

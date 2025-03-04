@@ -8,14 +8,21 @@
 </head>
 <body data-question="26">
 		<div class="container">
-			<h1>Question 26: What is the primary difference between a singly linked list and a doubly linked list?</h1>
-			<div id="timer">Time Left: <span id="countdown">120:00</span></div>
-			<form id="quizForm">
-				<label><input type="radio" name="answer" value="A"> A) Singly linked lists allow bidirectional traversal, whereas doubly linked lists do not.</label><br>
-				<label><input type="radio" name="answer" value="B"> B) Doubly linked lists use less memory than singly linked lists.</label><br>
-				<label><input type="radio" name="answer" value="C"> C) Doubly linked lists have pointers to both the next and previous nodes, while singly linked lists only have pointers to the next node.</label><br>
-				<label><input type="radio" name="answer" value="D"> D) Singly linked lists require more memory than doubly linked lists.</label><br>
-				<button type="button" id="submitAnswer">Submit</button>
+			<h1>Question 26: Items were added sequentially in this stack starting with 'ham':</h1>
+        <pre>
+'sausage'
+'toast'
+'eggs'
+'ham'
+        </pre>
+        <p>What is the correct order of contents after the push operation is performed with the value 'bacon'?</p>
+        <div id="timer">Time Left: <span id="countdown">120:00</span></div>
+        <form id="quizForm">
+            <label><input type="radio" name="answer" value="A"> A) 'bacon''sausage''toast''eggs''ham'</label><br>
+            <label><input type="radio" name="answer" value="B"> B) 'sausage''bacon''toast''eggs''ham'</label><br>
+            <label><input type="radio" name="answer" value="C"> C) 'sausage''toast''eggs''bacon''ham'</label><br>
+            <label><input type="radio" name="answer" value="D"> D) 'sausage''toast''eggs''ham''bacon'</label><br>
+            <button type="button" id="submitAnswer">Submit</button>
 			</form>
 			<p id="feedback"></p>
 			<!--<button id="resetQuiz">Reset</button>-->

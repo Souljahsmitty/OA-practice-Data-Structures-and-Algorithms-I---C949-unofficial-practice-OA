@@ -57,11 +57,11 @@ document.addEventListener("DOMContentLoaded", function() {
 				return;
 			}
 
-			if (selectedAnswer.value === "B") {
-				feedback.textContent = "✔ Correct!  Push and pop operations in a stack occur in O(1) time, as they only involve adding or removing the topmost element.";
+			if (selectedAnswer.value === "A") {
+				feedback.textContent = "✔ Correct!  In a stack, the last item added ('bird') is the first one to be removed using the pop operation (LIFO principle).";
 				feedback.className = "correct";
 			} else {
-				feedback.textContent = "✘ Incorrect. The correct answer is B:  Push and pop operations in a stack occur in O(1) time, as they only involve adding or removing the topmost element.";
+				feedback.textContent = "✘ Incorrect. The correct answer is A:  In a stack, the last item added ('bird') is the first one to be removed using the pop operation (LIFO principle).";
 				feedback.className = "wrong";
 			}
         });

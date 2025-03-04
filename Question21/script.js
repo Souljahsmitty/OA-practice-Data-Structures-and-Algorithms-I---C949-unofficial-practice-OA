@@ -58,10 +58,10 @@ document.addEventListener("DOMContentLoaded", function() {
 			}
 
 			if (selectedAnswer.value === "A") {
-				feedback.textContent = "✔ Correct! A **data structure** is a way of organizing, storing, and managing data efficiently.";
+				feedback.textContent = "✔ Correct! The first mid-value is 90. Since 99 is greater than 90, the search moves to the right half, where the next mid-value is 99.";
 				feedback.className = "correct";
 			} else {
-				feedback.textContent = "✘ Incorrect. The correct answer is A: Data structure**. A data structure provides the foundation for storing and operating on data efficiently.";
+				feedback.textContent = "✘ Incorrect. The correct answer is A: The first mid-value is 90. Since 99 is greater than 90, the search moves to the right half, where the next mid-value is 99.";
 				feedback.className = "wrong";
 			}
         });
