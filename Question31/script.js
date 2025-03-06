@@ -58,10 +58,10 @@ document.addEventListener("DOMContentLoaded", function() {
 			}
 
 			if (selectedAnswer.value === "B") {
-				feedback.textContent = "✔ Correct! Recursion uses the call stack to store function calls, making stacks the ideal data structure.";
+				feedback.textContent = "✔ Correct! Recursion involves a function calling itself repeatedly until a base condition is met. During this process, each recursive function call stores its execution context (local variables, return addresses, etc.) in memory until it is resolved. This follows the Last In, First Out (LIFO) principle, which is characteristic of a Stack.";
 				feedback.className = "correct";
 			} else {
-				feedback.textContent = "✘ Incorrect. The correct answer is **B. Recursion uses the call stack to store function calls, making stacks the ideal data structure.";
+				feedback.textContent = "✘ Incorrect. The correct answer is **B. Recursion involves a function calling itself repeatedly until a base condition is met. During this process, each recursive function call stores its execution context (local variables, return addresses, etc.) in memory until it is resolved. This follows the Last In, First Out (LIFO) principle, which is characteristic of a Stack.";
 				feedback.className = "wrong";
 			}
         });
