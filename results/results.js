@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     "12": { 
         question: "12. In garbage collection, what is the process of identifying and reclaiming memory that is no longer in use?", 
-        correct: "B", 
+        correct: "D", 
         explanation: "Memory sweeping is part of garbage collection that reclaims memory no longer in use by identifying objects no longer accessible." 
     },
     "13": { 
@@ -115,7 +115,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	"21": { 
         question: "21. What is the primary disadvantage of using an array over a linked list?", 
         correct: "A", 
-        explanation: "A **data structure** is a way of organizing, storing, and managing data efficiently." 
+        explanation: "The primary disadvantage of an array over a linked list is that it has a fixed size." 
     },
     "22": { 
         question: "22. How does a circular queue differ from a standard queue?", 
