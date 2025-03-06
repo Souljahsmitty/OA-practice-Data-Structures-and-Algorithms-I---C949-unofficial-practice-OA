@@ -174,7 +174,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     "33": { 
         question: "33. What is the time complexity of inserting an element in an unsorted linked list?", 
-        correct: "B", 
+        correct: "A", 
         explanation: "Insertion in an unsorted linked list takes O(1) time, as the new node can be added at the head." 
     },
     "34": { 
